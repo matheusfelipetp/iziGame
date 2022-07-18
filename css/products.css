@@ -1,0 +1,72 @@
+.main__products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  width: 70%;
+}
+
+.products__box {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 420px;
+  border-radius: 4px;
+  border: 2px solid var(--bg-card);
+  transition: 0.2s ease;
+}
+
+.products__box:hover {
+  border: 2px solid var(--hover);
+}
+
+.box__img img {
+  border-radius: 4px 4px 0 0;
+}
+
+.box__info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 12px;
+}
+
+.info__category {
+  width: 70px;
+  border-radius: 4px;
+  background: transparent;
+  border: 1px solid var(--primary);
+  color: var(--title);
+  font: 500 0.75rem "Inter", sans-serif;
+  text-align: center;
+  padding: 5px;
+}
+
+.box__info h2 {
+  font: 700 1.125rem "Inter", sans-serif;
+  color: var(--title);
+}
+
+.box__info p {
+  font: 400 0.875rem/1.6 "Inter", sans-serif;
+  color: var(--text);
+}
+
+.info__price {
+  font: 600 0.875rem "Inter", sans-serif;
+  color: var(--title);
+}
+
+.btn__box {
+  padding: 8px;
+  border: none;
+  background: var(--primary);
+  border-radius: 4px;
+  color: #fff;
+  font: 500 0.875rem "Inter", sans-serif;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn__box:hover {
+  background: var(--hover);
+}

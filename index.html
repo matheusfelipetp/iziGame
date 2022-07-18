@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A maior e melhor loja de jogos eletrônicos do Brasil. Variedade e preço que cabe no seu bolso.">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script defer src="./js/database.js"></script>
+  <script defer src="./js/index.js"></script>
+
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+
+  <title>iziGame</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__itens container">
+      <div class="header__logo">
+        <img width="512" height="512" src="./img/favicon.png" alt="Logo">
+        <h1><a href="./index.html">izi<span>Game</span></a></h1>
+      </div>
+      <nav class="header__nav">
+        <label class="switch">
+          <input id="checkbox" type="checkbox">
+          <span class="slider"></span>
+        </label>
+        <ul class="nav__menu">
+          <li><a href="#">Todos</a></li>
+          <li><a href="#">Aventura</a></li>
+          <li><a href="#">Esporte</a></li>
+          <li><a href="#">RPG</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main container">
+    <section class="main__products">
+      <!-- <div class="products__box">
+        <figure class="box__img">
+          <img width="950" height="534" src="./img/ark.jpg" alt="Ark Survival Envolved">
+        </figure>
+        <div class="box__info">
+          <span class="info__category">Aventura</span>
+          <h2>Ark Survival Envolved</h2>
+          <p>Use habilidade e astúcia para matar, domar, criar e montar dinossauros e criaturas primitivas...</p>
+          <span class="info__price">R$ 57.99</span>
+          <button class="btn__box">Adicionar ao carrinho</button>
+        </div>
+      </div>
+
+      <div class="products__box">
+        <figure class="box__img">
+          <img width="920" height="517" src="./img/elden-ring.jpg" alt="Elden Ring">
+        </figure>
+        <div class="box__info">
+          <span class="info__category">RPG</span>
+          <h2>Elden Ring</h2>
+          <p>Levante-se, Maculado, e seja guiado pela graça para portar o poder do Anel Prístino...</p>
+          <span class="info__price">R$ 249.90</span>
+          <button class="btn__box">Adicionar ao carrinho</button>
+        </div>
+      </div>
+
+      <div class="products__box">
+        <figure class="box__img">
+          <img width="1400" height="788" src="./img/gta.jpg" alt="Grand Theft Auto V">
+        </figure>
+        <div class="box__info">
+          <span class="info__category">Aventura</span>
+          <h2>Grand Theft Auto V</h2>
+          <p>Grand Theft Auto V para PC oferece aos jogadores a opção de explorar o gigantesco...</p>
+          <span class="info__price">R$ 69.90</span>
+          <button class="btn__box">Adicionar ao carrinho</button>
+        </div>
+      </div>
+
+      <div class="products__box">
+        <figure class="box__img">
+          <img width="1038" height="576" src="./img/fifa.jpg" alt="Fifa 22">
+        </figure>
+        <div class="box__info">
+          <span class="info__category">Esporte</span>
+          <h2>FIFA 22</h2>
+          <p>FIFA 22 é um jogo eletrônico de simulação de futebol desenvolvido e publicado pela Electronic Arts...</p>
+          <span class="info__price">R$ 249.90</span>
+          <button class="btn__box">Adicionar ao carrinho</button>
+        </div>
+      </div>
+
+      <div class="products__box">
+        <figure class="box__img">
+          <img width="1200" height="675" src="./img/F1-22.jpg" alt="Fórmula 1">
+        </figure>
+        <div class="box__info">
+          <span class="info__category">Esporte</span>
+          <h2>F1 22</h2>
+          <p>Entre na nova era da Formula 1, o jogo oficial do 2022 FIA Formula One World Championship...</p>
+          <span class="info__price">R$ 249.00</span>
+          <button class="btn__box">Adicionar ao carrinho</button>
+        </div>
+      </div>
+
+      <div class="products__box">
+        <figure class="box__img">
+          <img width="924" height="520" src="./img/new-world.jpg" alt="New World">
+        </figure>
+        <div class="box__info">
+          <span class="info__category">RPG</span>
+          <h2>New World</h2>
+          <p>Explore um MMO de mundo aberto emocionante e cheio de perigos e oportunidades...</p>
+          <span class="info__price">R$ 75.49</span>
+          <button class="btn__box">Adicionar ao carrinho</button>
+        </div> 
+      </div> -->
+    </section>
+
+    <section class="main__cart">
+      <form action="#">
+        <input class="form__input" type="search" placeholder="Digite aqui sua pesquisa">
+        <button class="form__btn">Pesquisar</button>
+      </form>
+
+      <div class="cart">
+        <div class="cart__title">
+          <img width="48" height="48" src="./img/cart.svg" alt="Carrinho de compras">
+          <h1>Carrinho</h1>
+        </div>
+        <div class="cart__products empty">
+          <div class="cart__empty empty">
+            <h2>Carrinho vazio</h2>
+            <p>Adicione itens</p>
+          </div>
+          <ul class="cart__list">
+            <!-- <li class="product__card">
+             <figure>
+              <img src="./img/ark.jpg" alt="Ark Survival Envolved">
+            </figure>
+            <div>
+              <h3>Ark Survival Envolved</h3>
+              <span>R$ 57.99</span>
+            </div>
+            <button class="btn-remove">X</button> 
+          </li> -->
+          </ul>
+        </div>
+
+        <div class="cart__info empty">
+          <div class="info__product">
+            <h2>Quantidade:</h2>
+            <p id="amount">0</p>
+          </div>
+          <div class="info__product">
+            <h2>Total:</h2>
+            <p id="price-total">R$ 00,00</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>iziGame© A maior e melhor loja de jogos eletrônicos do Brasil</p>
+  </footer>
+</body>
+
+</html>
