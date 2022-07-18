@@ -67,7 +67,6 @@ function addProducts(event) {
     arrayCart.push(filter);
     listProductsCart();
     priceCart();
-    listProducts(data);
   }
 }
 
@@ -92,6 +91,7 @@ function templateCart(product) {
   const boxInfo = document.createElement("div");
   const title = document.createElement("h3");
   const price = document.createElement("span");
+  const amount = document.createElement("span");
   const btn = document.createElement("button");
 
   liProduct.classList.add("product__card");
@@ -101,11 +101,12 @@ function templateCart(product) {
   img.alt = product.nameItem;
   title.innerText = product.nameItem;
   price.innerText = `R$ ${product.value.toFixed(2)}`;
+  amount.innerText = `Quantidade: `;
   btn.innerText = "X";
 
   liProduct.append(boxImg, boxInfo, btn);
   boxImg.appendChild(img);
-  boxInfo.append(title, price);
+  boxInfo.append(title, price, amount);
 
   return liProduct;
 }
@@ -148,6 +149,13 @@ function filterProductInput(event) {
 
   const searchUser = inputText.value;
   const result = searchProductInput(searchUser);
+  let notFound = document.querySelector(".not-found");
+
+  if (result == "") {
+    notFound.classList.remove("desativo");
+  } else {
+    notFound.classList.add("desativo");
+  }
 
   listProducts(result);
 }
@@ -195,4 +203,9 @@ function filterProductLink(event) {
 
 links.forEach((item) => {
   item.addEventListener("click", filterProductLink);
+});
+
+const formBtn = document.querySelector(".form__btn");
+formBtn.addEventListener("click", (event) => {
+  event.preventDefault();
 });

@@ -51,6 +51,25 @@ img {
   gap: 60px;
 }
 
+.not-found.desativo {
+  display: none;
+}
+
+.not-found {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.not-found img {
+  width: 300px;
+}
+
+.not-found p {
+  font: 700 1.5rem "Inter", sans-serif;
+  text-align: center;
+}
+
 .footer {
   width: 100%;
   flex-shrink: 0;

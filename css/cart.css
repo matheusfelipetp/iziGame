@@ -127,9 +127,15 @@
   border-radius: 4px;
 }
 
+.product__card div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
 .product__card h3 {
   font: 700 1rem "Inter", sans-serif;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
   color: var(--title);
 }
 
