@@ -60,4 +60,64 @@ const data = [
     addCart: "Adicionar ao carrinho",
     tag: ["RPG"],
   },
+  {
+    id: 7,
+    img: "./img/raft.jpg",
+    nameItem: "Raft",
+    description:
+      "Raft é um jogo survival em mundo aberto, se passando após o mundo ter sido inundado...",
+    value: 36.99,
+    addCart: "Adicionar ao carrinho",
+    tag: ["Aventura"],
+  },
+  {
+    id: 8,
+    img: "./img/sea-of-thieves.jpg",
+    nameItem: "Sea of Thieves",
+    description:
+      "Sea of Thieves oferece a experiência essencial de pirataria. De navegação e combate...",
+    value: 89.99,
+    addCart: "Adicionar ao carrinho",
+    tag: ["Aventura"],
+  },
+  {
+    id: 9,
+    img: "./img/nba.jpg",
+    nameItem: "NBA 2K22",
+    description:
+      "NBA 2K22 coloca todo o universo do basquete nas suas mãos. Qualquer pessoa, qualquer lugar...",
+    value: 299.99,
+    addCart: "Adicionar ao carrinho",
+    tag: ["Esporte"],
+  },
+  {
+    id: 10,
+    img: "./img/elder-scrolls.jpg",
+    nameItem: "The Elder Scrolls",
+    description:
+      "Junte-se a mais de 20 milhões de jogadores neste premiado RPG multijogador online e viva...",
+    value: 61.5,
+    addCart: "Adicionar ao carrinho",
+    tag: ["RPG"],
+  },
+  {
+    id: 11,
+    img: "./img/Madden-NFL-22.jpg",
+    nameItem: "Madden NFL 22",
+    description:
+      "Madden NFL 22 é onde as partidas acontecem. Os novos recursos do modo Franchise incluem...",
+    value: 249.0,
+    addCart: "Adicionar ao carrinho",
+    tag: ["Esporte"],
+  },
+  {
+    id: 12,
+    img: "./img/final-fantasy.jpg",
+    nameItem: "Final Fantasy XIV",
+    description:
+      "Faça parte de um FINAL FANTASY épico e sempre renovado, aventurando-se e explorando...",
+    value: 52.99,
+    addCart: "Adicionar ao carrinho",
+    tag: ["RPG"],
+  },
 ];

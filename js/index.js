@@ -34,7 +34,7 @@ function createCardProducts(product) {
   category.innerText = product.tag;
   title.innerText = product.nameItem;
   description.innerText = product.description;
-  price.innerText = `R$ ${product.value.toFixed(2)}`;
+  price.innerText = `R$ ${product.value.toFixed(2).replace(".", ",")}`;
   btn.innerText = product.addCart;
   btn.setAttribute("id", product.id);
 
@@ -99,7 +99,7 @@ function templateCart(product) {
   img.src = product.img;
   img.alt = product.nameItem;
   title.innerText = product.nameItem;
-  price.innerText = `R$ ${product.value.toFixed(2)}`;
+  price.innerText = `R$ ${product.value.toFixed(2).replace(".", ",")}`;
   btn.innerText = "X";
 
   liProduct.append(boxImg, boxInfo, btn);
@@ -119,7 +119,7 @@ function priceCart() {
   });
 
   amount.innerText = arrayCart.length;
-  priceTotal.innerText = `R$ ${total.toFixed(2)}`;
+  priceTotal.innerText = `R$ ${total.toFixed(2).replace(".", ",")}`;
 }
 
 function removeProduct(event) {
