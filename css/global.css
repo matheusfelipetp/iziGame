@@ -58,8 +58,9 @@ img {
 .not-found {
   display: flex;
   align-items: center;
-  flex-direction: column;
   width: 100%;
+  margin-left: 200px;
+  flex-direction: column;
 }
 
 .not-found img {
