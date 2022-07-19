@@ -59,6 +59,7 @@ img {
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 100%;
 }
 
 .not-found img {
@@ -67,6 +68,7 @@ img {
 
 .not-found p {
   font: 700 1.5rem "Inter", sans-serif;
+  color: var(--title);
   text-align: center;
 }
 

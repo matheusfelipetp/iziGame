@@ -91,7 +91,6 @@ function templateCart(product) {
   const boxInfo = document.createElement("div");
   const title = document.createElement("h3");
   const price = document.createElement("span");
-  const amount = document.createElement("span");
   const btn = document.createElement("button");
 
   liProduct.classList.add("product__card");
@@ -101,12 +100,11 @@ function templateCart(product) {
   img.alt = product.nameItem;
   title.innerText = product.nameItem;
   price.innerText = `R$ ${product.value.toFixed(2)}`;
-  amount.innerText = `Quantidade: `;
   btn.innerText = "X";
 
   liProduct.append(boxImg, boxInfo, btn);
   boxImg.appendChild(img);
-  boxInfo.append(title, price, amount);
+  boxInfo.append(title, price);
 
   return liProduct;
 }
