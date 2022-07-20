@@ -25,17 +25,25 @@
         <img width="512" height="512" src="./img/favicon.png" alt="Logo">
         <h1><a href="./index.html">izi<span>Game</span></a></h1>
       </div>
-      <nav class="header__nav">
+      <nav id="nav-mobile" class="header__nav">
         <label class="switch">
           <input id="checkbox" type="checkbox">
           <span class="slider"></span>
         </label>
+        <div id="cart-mobile">
+          <img class="light-mode" src="./img/add-1.svg" alt="Carrinho">
+          <img class="cart-dark-mode" src="./img/add-2.svg" alt="Carrinho">
+          <p id="amount-mobile">0</p>
+        </div>
         <ul class="nav__menu">
           <li><a href="#">Todos</a></li>
           <li><a href="#">Aventura</a></li>
           <li><a href="#">Esporte</a></li>
           <li><a href="#">RPG</a></li>
         </ul>
+        <button id="btn-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="nav__menu" aria-expanded="false">
+          <span id="menu-hamburguer"></span>
+        </button>
       </nav>
     </div>
   </header>
@@ -81,7 +89,7 @@
   </main>
 
   <footer class="footer">
-    <p>iziGame© A maior e melhor loja de jogos eletrônicos do Brasil</p>
+    <p class="container">iziGame© A maior e melhor loja de jogos eletrônicos do Brasil</p>
   </footer>
 </body>
 

@@ -111,6 +111,7 @@ function templateCart(product) {
 
 function priceCart() {
   const amount = document.querySelector("#amount");
+  const amountMobile = document.querySelector("#amount-mobile");
   const priceTotal = document.querySelector("#price-total");
 
   let total = 0;
@@ -119,6 +120,7 @@ function priceCart() {
   });
 
   amount.innerText = arrayCart.length;
+  amountMobile.innerText = arrayCart.length;
   priceTotal.innerText = `R$ ${total.toFixed(2).replace(".", ",")}`;
 }
 
@@ -207,3 +209,39 @@ const formBtn = document.querySelector(".form__btn");
 formBtn.addEventListener("click", (event) => {
   event.preventDefault();
 });
+
+const btnMobile = document.getElementById("btn-mobile");
+
+function toggleMenu(event) {
+  if (event.type === "touchstart") {
+    return event.preventDefault;
+  }
+
+  const nav = document.getElementById("nav-mobile");
+  nav.classList.toggle("active");
+  sectionProducts.classList.toggle("active");
+
+  const active = nav.classList.contains("active");
+  event.currentTarget.setAttribute("aria-expanded", active);
+
+  if (active) {
+    event.currentTarget.setAttribute("aria-label", "Fechar Menu");
+  } else {
+    event.currentTarget.setAttribute("aria-label", "Abrir Menu");
+  }
+}
+btnMobile.addEventListener("click", toggleMenu);
+btnMobile.addEventListener("touchstart", toggleMenu);
+
+const cartMobile = document.querySelector("#cart-mobile");
+
+function toggleCartMobile(event) {
+  if (event.type === "touchstart") {
+    return event.preventDefault;
+  }
+
+  const mainCart = document.querySelector(".main__cart");
+  mainCart.classList.toggle("mobile");
+  sectionProducts.classList.toggle("mobile");
+}
+cartMobile.addEventListener("click", toggleCartMobile);

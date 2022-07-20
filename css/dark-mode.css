@@ -55,3 +55,9 @@ input:checked + .slider:before {
   transform: translateX(1.4em);
   background-color: var(--primary);
 }
+
+@media (max-width: 470px) {
+  .switch {
+    font-size: 8px;
+  }
+}

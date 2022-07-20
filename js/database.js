@@ -5,7 +5,7 @@ const data = [
     img: "./img/ark.jpg",
     nameItem: "Ark Survival Envolved",
     description:
-      "Use habilidade e astúcia para matar, domar, criar e montar dinossauros e criaturas primitivas....",
+      "Use habilidade e astúcia para matar, domar, criar e montar dinossauros e criaturas...",
     value: 57.99,
     addCart: "Adicionar ao carrinho",
     tag: ["Aventura"],
@@ -35,7 +35,7 @@ const data = [
     img: "./img/fifa.jpg",
     nameItem: "FIFA 22",
     description:
-      "FIFA 22 é um jogo eletrônico de simulação de futebol desenvolvido e publicado pela Electronic Arts...",
+      "FIFA 22 é um jogo eletrônico de simulação de futebol desenvolvido e publicado...",
     value: 249.9,
     addCart: "Adicionar ao carrinho",
     tag: ["Esporte"],
@@ -45,7 +45,7 @@ const data = [
     img: "./img/F1-22.jpg",
     nameItem: "F1 22",
     description:
-      "Entre na nova era da Formula 1, o jogo oficial do 2022 FIA Formula One World Championship...",
+      "Entre na nova era da Formula 1, o jogo oficial do 2022 FIA Formula One World Cup...",
     value: 249.9,
     addCart: "Adicionar ao carrinho",
     tag: ["Esporte"],
@@ -85,7 +85,7 @@ const data = [
     img: "./img/nba.jpg",
     nameItem: "NBA 2K22",
     description:
-      "NBA 2K22 coloca todo o universo do basquete nas suas mãos. Qualquer pessoa, qualquer lugar...",
+      "NBA 2K22 coloca todo o universo do basquete nas suas mãos. Qualquer pessoa...",
     value: 299.99,
     addCart: "Adicionar ao carrinho",
     tag: ["Esporte"],
@@ -95,7 +95,7 @@ const data = [
     img: "./img/elder-scrolls.jpg",
     nameItem: "The Elder Scrolls",
     description:
-      "Junte-se a mais de 20 milhões de jogadores neste premiado RPG multijogador online e viva...",
+      "Junte-se a mais de 20 milhões de jogadores neste premiado RPG multijogador online...",
     value: 61.5,
     addCart: "Adicionar ao carrinho",
     tag: ["RPG"],
@@ -105,7 +105,7 @@ const data = [
     img: "./img/Madden-NFL-22.jpg",
     nameItem: "Madden NFL 22",
     description:
-      "Madden NFL 22 é onde as partidas acontecem. Os novos recursos do modo Franchise incluem...",
+      "Madden NFL 22 é onde as partidas acontecem. Os novos recursos do modo carreira...",
     value: 249.0,
     addCart: "Adicionar ao carrinho",
     tag: ["Esporte"],
@@ -115,7 +115,7 @@ const data = [
     img: "./img/final-fantasy.jpg",
     nameItem: "Final Fantasy XIV",
     description:
-      "Faça parte de um FINAL FANTASY épico e sempre renovado, aventurando-se e explorando...",
+      "Faça parte de um FINAL FANTASY épico e sempre renovado, aventurando-se...",
     value: 52.99,
     addCart: "Adicionar ao carrinho",
     tag: ["RPG"],

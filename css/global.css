@@ -46,6 +46,7 @@ img {
 
 .main {
   display: flex;
+  width: 100%;
   flex: 1 0 auto;
   padding: 60px 0;
   gap: 60px;
@@ -81,4 +82,20 @@ img {
   font: 400 1rem "Inter", sans-serif;
   color: #fff;
   padding: 20px 0;
+}
+
+@media (max-width: 1320px) {
+  .container {
+    padding: 0 20px;
+    margin: 0;
+  }
+  .main {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    font-size: 0.8rem;
+  }
 }
