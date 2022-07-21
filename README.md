@@ -1,5 +1,5 @@
 # 🎮 iziGame
-Projeto final do Módulo 1 da Kenzie Academy Brasil. O objetivo era criar uma página de e-commerce, onde o usuário pudesse adicionar/remover itens do carrinho, além de filtrar por categoria. O site também consta com um sistema de dark-mode.
+Projeto final do Módulo 1 da Kenzie Academy Brasil. O objetivo era criar uma página de e-commerce, onde o usuário pudesse adicionar/remover itens do carrinho, além de filtrar por categoria. O site também consta com um sistema de dark-mode e responsividade para todas as telas.
 
 ## 🔨 FERRAMENTAS
 - HTML5
