@@ -72,7 +72,7 @@
   color: var(--title);
 }
 
-.info__price .offer {
+.info__price .price-offer {
   text-decoration: line-through;
   color: #fa2c42;
   font-size: 0.8rem;

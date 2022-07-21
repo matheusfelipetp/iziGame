@@ -50,7 +50,7 @@ function createCardProducts(product) {
     const priceOffer = product.value / 2;
     newPrice.innerText = `R$ ${priceOffer.toFixed(2).replace(".", ",")}`;
 
-    price.classList.add("offer");
+    price.classList.add("price-offer");
 
     divPrice.appendChild(newPrice);
   }
