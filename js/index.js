@@ -19,6 +19,7 @@ function createCardProducts(product) {
   const category = document.createElement("span");
   const title = document.createElement("h2");
   const description = document.createElement("p");
+  const divPrice = document.createElement("div");
   const price = document.createElement("span");
   const btn = document.createElement("button");
 
@@ -26,7 +27,7 @@ function createCardProducts(product) {
   imgBox.classList.add("box__img");
   divInfo.classList.add("box__info");
   category.classList.add("info__category");
-  price.classList.add("info__price");
+  divPrice.classList.add("info__price");
   btn.classList.add("btn__box");
 
   img.src = product.img;
@@ -38,15 +39,21 @@ function createCardProducts(product) {
   btn.innerText = product.addCart;
   btn.setAttribute("id", product.id);
 
-  if (product.offer) {
-    divBox.classList.add("offer");
-    const priceOffer = product.value / 2;
-    price.innerText = `R$ ${priceOffer.toFixed(2).replace(".", ",")}`;
-  }
-
   divBox.append(imgBox, divInfo);
   imgBox.appendChild(img);
-  divInfo.append(category, title, description, price, btn);
+  divPrice.appendChild(price);
+  divInfo.append(category, title, description, divPrice, btn);
+
+  if (product.offer) {
+    divBox.classList.add("offer");
+    const newPrice = document.createElement("span");
+    const priceOffer = product.value / 2;
+    newPrice.innerText = `R$ ${priceOffer.toFixed(2).replace(".", ",")}`;
+
+    price.classList.add("offer");
+
+    divPrice.appendChild(newPrice);
+  }
 
   return divBox;
 }

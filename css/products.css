@@ -65,8 +65,17 @@
 }
 
 .info__price {
+  display: flex;
+  gap: 8px;
+  align-items: center;
   font: 600 0.875rem "Inter", sans-serif;
   color: var(--title);
+}
+
+.info__price .offer {
+  text-decoration: line-through;
+  color: #fa2c42;
+  font-size: 0.8rem;
 }
 
 .btn__box {
