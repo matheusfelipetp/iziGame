@@ -75,9 +75,9 @@
   .nav__menu {
     display: block;
     position: absolute;
-    width: 100%;
+    width: 65%;
     top: 80px;
-    left: 500px;
+    right: 0px;
     background: var(--bg-body);
     height: 0;
     z-index: 1000;
@@ -85,14 +85,22 @@
     visibility: hidden;
     overflow: hidden;
     box-shadow: 0 3px 4px var(--shadow);
+    border-radius: 0 0 0 4px;
   }
   .nav__menu a {
     color: var(--text);
     font: 600 1.125rem "Inter", sans-serif;
     padding: 0.6rem 0;
     margin: 0 22px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
     display: block;
+  }
+  .nav__menu a::after {
+    content: "";
+    display: block;
+    margin-top: 12px;
+    width: 100%;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.1);
   }
   .nav__menu a:hover::after {
     width: 0%;
@@ -139,18 +147,6 @@
   #nav-mobile.active #menu-hamburguer::after {
     transform: rotate(-135deg);
     top: -7px;
-  }
-}
-
-@media (max-width: 800px) {
-  .nav__menu {
-    left: 300px;
-  }
-}
-
-@media (max-width: 560px) {
-  .nav__menu {
-    left: 180px;
   }
 }
 

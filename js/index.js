@@ -38,6 +38,12 @@ function createCardProducts(product) {
   btn.innerText = product.addCart;
   btn.setAttribute("id", product.id);
 
+  if (product.offer) {
+    divBox.classList.add("offer");
+    const priceOffer = product.value / 2;
+    price.innerText = `R$ ${priceOffer.toFixed(2).replace(".", ",")}`;
+  }
+
   divBox.append(imgBox, divInfo);
   imgBox.appendChild(img);
   divInfo.append(category, title, description, price, btn);
@@ -50,6 +56,7 @@ function listProducts(list) {
 
   list.forEach((item) => {
     const template = createCardProducts(item);
+
     sectionProducts.appendChild(template);
   });
 }
@@ -102,6 +109,11 @@ function templateCart(product) {
   price.innerText = `R$ ${product.value.toFixed(2).replace(".", ",")}`;
   btn.innerText = "X";
 
+  if (product.offer) {
+    const priceOffer = product.value / 2;
+    price.innerText = `R$ ${priceOffer.toFixed(2).replace(".", ",")}`;
+  }
+
   liProduct.append(boxImg, boxInfo, btn);
   boxImg.appendChild(img);
   boxInfo.append(title, price);
@@ -116,7 +128,12 @@ function priceCart() {
 
   let total = 0;
   arrayCart.forEach((item) => {
-    total += item.value;
+    if (item.offer) {
+      const priceOffer = item.value / 2;
+      total += priceOffer;
+    } else {
+      total += item.value;
+    }
   });
 
   amount.innerText = arrayCart.length;
@@ -191,6 +208,9 @@ function filterProductLink(event) {
     let itemCategory = item.tag[0];
 
     if (clickEvent.innerText == itemCategory) {
+      arrayFilter.push(item);
+    }
+    if (clickEvent.innerText === "Promoção" && item.offer) {
       arrayFilter.push(item);
     }
   });

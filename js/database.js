@@ -9,6 +9,7 @@ const data = [
     value: 57.99,
     addCart: "Adicionar ao carrinho",
     tag: ["Aventura"],
+    offer: false,
   },
   {
     id: 2,
@@ -19,6 +20,7 @@ const data = [
     value: 249.9,
     addCart: "Adicionar ao carrinho",
     tag: ["RPG"],
+    offer: true,
   },
   {
     id: 3,
@@ -29,6 +31,7 @@ const data = [
     value: 69.9,
     addCart: "Adicionar ao carrinho",
     tag: ["Aventura"],
+    offer: false,
   },
   {
     id: 4,
@@ -39,6 +42,7 @@ const data = [
     value: 249.9,
     addCart: "Adicionar ao carrinho",
     tag: ["Esporte"],
+    offer: true,
   },
   {
     id: 5,
@@ -49,6 +53,7 @@ const data = [
     value: 249.9,
     addCart: "Adicionar ao carrinho",
     tag: ["Esporte"],
+    offer: false,
   },
   {
     id: 6,
@@ -59,6 +64,7 @@ const data = [
     value: 75.49,
     addCart: "Adicionar ao carrinho",
     tag: ["RPG"],
+    offer: false,
   },
   {
     id: 7,
@@ -69,6 +75,7 @@ const data = [
     value: 36.99,
     addCart: "Adicionar ao carrinho",
     tag: ["Aventura"],
+    offer: false,
   },
   {
     id: 8,
@@ -79,6 +86,7 @@ const data = [
     value: 89.99,
     addCart: "Adicionar ao carrinho",
     tag: ["Aventura"],
+    offer: true,
   },
   {
     id: 9,
@@ -89,6 +97,7 @@ const data = [
     value: 299.99,
     addCart: "Adicionar ao carrinho",
     tag: ["Esporte"],
+    offer: true,
   },
   {
     id: 10,
@@ -99,6 +108,7 @@ const data = [
     value: 61.5,
     addCart: "Adicionar ao carrinho",
     tag: ["RPG"],
+    offer: false,
   },
   {
     id: 11,
@@ -109,6 +119,7 @@ const data = [
     value: 249.0,
     addCart: "Adicionar ao carrinho",
     tag: ["Esporte"],
+    offer: false,
   },
   {
     id: 12,
@@ -119,5 +130,6 @@ const data = [
     value: 52.99,
     addCart: "Adicionar ao carrinho",
     tag: ["RPG"],
+    offer: false,
   },
 ];

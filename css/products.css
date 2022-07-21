@@ -13,6 +13,19 @@
   border-radius: 4px;
   border: 2px solid var(--bg-card);
   transition: 0.2s ease;
+  position: relative;
+}
+
+.products__box.offer::after {
+  content: "Promoção";
+  width: max-content;
+  padding: 8px;
+  border-radius: 4px;
+  background: #ffd100;
+  font: 500 0.875rem "Inter", sans-serif;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 .products__box:hover {
