@@ -21,6 +21,7 @@ function createCardProducts(product) {
   const description = document.createElement("p");
   const divPrice = document.createElement("div");
   const price = document.createElement("span");
+  const newPrice = document.createElement("span");
   const btn = document.createElement("button");
 
   divBox.classList.add("products__box");
@@ -45,13 +46,11 @@ function createCardProducts(product) {
   divInfo.append(category, title, description, divPrice, btn);
 
   if (product.offer) {
-    divBox.classList.add("offer");
-    const newPrice = document.createElement("span");
     const priceOffer = product.value / 2;
     newPrice.innerText = `R$ ${priceOffer.toFixed(2).replace(".", ",")}`;
 
+    divBox.classList.add("offer");
     price.classList.add("price-offer");
-
     divPrice.appendChild(newPrice);
   }
 
